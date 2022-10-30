@@ -47,13 +47,21 @@ body {
   margin: 0;
 }
 
+
+h5:hover,
+h4:hover {
+  cursor: default;
+  transform: scale(1.05);
+}
+
 .container {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 4fr;
-  grid-template-columns: 1fr 5fr;
-  
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr 7fr;
+  /* grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr 7fr; */
 }
 
 .sidebar {
@@ -74,14 +82,25 @@ body {
 }
 
 .logo {
-  display: grid;
-  align-items: start;
-  justify-items: center;
+  display: flex;
+  /* align-items: start; */
+  justify-content: center;
+  grid-template-rows: 1;
+}
+
+.logo>svg {
+  margin-top: 6px;
 }
 
 .dashboard {
-  margin: 5px 0px 0px 0px;
+  font-size: 1.6rem;
+  margin: 11px 0px 0px 0px;
   color: white;
+}
+
+svg {
+  color: white;
+  /* margin-top: 6px; */
 }
 
 .tabs {
@@ -90,9 +109,12 @@ body {
 }
 
 .tab {
+  display: flex;
   color: white;
   margin: 0px;
-  width: 87px;
+  width: 170px;
+  text-align: left;
+  font-size: 1.6rem;
 }
 
 .options {
